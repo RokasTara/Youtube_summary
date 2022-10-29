@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "youtube-summary"
+version = "0.1.0"
+description = "This project generates a summary of a youtube video by retrieving video transcript and summarizing it with GPT-3 NLP model"
+authors = ["Rokas Tarasevičius <rokas.tarasevicius@gmail.com>"]
+readme = "README.md"
+packages = [{include = "youtube_summary"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+youtube-transcript-api = "^0.5.0"
+openai = "^0.24.0"
+pre-commit = "^2.20.0"
+python-dotenv = "^0.21.0"
+fastapi = "^0.85.1"
+uvicorn = "^0.19.0"
+sqlalchemy = "^1.4.42"
+psycopg2 = "^2.9.5"
+asyncpg = "^0.27.0"
+alembic = "^1.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
