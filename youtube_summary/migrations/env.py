@@ -18,7 +18,6 @@ if config.config_file_name is not None:
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from youtube_summary.db.models import *
 from youtube_summary.db.database import Base
 # target_metadata = mymodel.Base.metadata
 target_metadata = Base.metadata

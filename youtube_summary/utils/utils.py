@@ -1,10 +1,9 @@
 import os
-from webbrowser import get
 from youtube_transcript_api import YouTubeTranscriptApi as Transcript
 import openai
 from dotenv import load_dotenv
 
-from youtube_summary.db.database import SessionLocal
+from ..db.database import SessionLocal
 
 load_dotenv()
 
