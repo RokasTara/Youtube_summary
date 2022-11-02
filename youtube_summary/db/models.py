@@ -5,7 +5,6 @@ from sqlalchemy.orm import relationship
 from .database import Base
 
 
-
 class User(Base):
     __tablename__ = "users"
 
@@ -27,3 +26,11 @@ class Summary(Base):
     owner_id = Column(Integer, ForeignKey("users.id"))
 
     owner = relationship("User", back_populates="summaries")
+
+
+class Report(Base):
+    __tablename__ = "reports"
+
+    id = Column(Integer, primary_key=True, unique=True, nullable=False)
+    description = Column(String)
+    title = Column(String)
