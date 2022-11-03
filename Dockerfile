@@ -1,5 +1,7 @@
 FROM python:3.10
 
+ENV PORT=8080
+
 WORKDIR /api
 
 RUN pip install poetry
@@ -15,4 +17,4 @@ WORKDIR /api/youtube_summary/migrations
 CMD ["alembic", "upgrade", "heads"]
 
 WORKDIR /api/youtube_summary
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]

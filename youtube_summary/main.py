@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from db import models
+from youtube_summary.db import models
 from db.database import engine
 from endpoints import summaries, users
 
