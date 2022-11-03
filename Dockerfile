@@ -14,7 +14,7 @@ RUN poetry env use system
 RUN poetry install
 
 WORKDIR /api/youtube_summary/migrations
-CMD ["alembic", "upgrade", "heads"]
+# CMD ["alembic", "upgrade", "heads"]
 
 WORKDIR /api/youtube_summary
 #CMD uvicorn main:app --host 0.0.0.0 --port $PORT
