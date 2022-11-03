@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "youtube_summary"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 youtube-transcript-api = "^0.5.0"
 openai = "^0.24.0"
 pre-commit = "^2.20.0"
