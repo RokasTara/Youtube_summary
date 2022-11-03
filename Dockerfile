@@ -1,6 +1,6 @@
-FROM python:3.10
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
-ENV PORT=8080
+#ENV PORT=8080
 
 WORKDIR /api
 
@@ -17,4 +17,4 @@ WORKDIR /api/youtube_summary/migrations
 CMD ["alembic", "upgrade", "heads"]
 
 WORKDIR /api/youtube_summary
-CMD uvicorn main:app --host 0.0.0.0 --port $PORT
+#CMD uvicorn main:app --host 0.0.0.0 --port $PORT
