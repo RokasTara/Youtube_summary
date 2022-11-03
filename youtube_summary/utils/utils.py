@@ -3,7 +3,7 @@ from youtube_transcript_api import YouTubeTranscriptApi as Transcript
 import openai
 from dotenv import load_dotenv
 
-from ..db.database import SessionLocal
+from youtube_summary.db.database import SessionLocal
 
 load_dotenv()
 
