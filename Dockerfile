@@ -17,4 +17,4 @@ WORKDIR /api/youtube_summary/migrations
 CMD ["alembic", "upgrade", "heads"]
 
 WORKDIR /api/youtube_summary
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+RUN uvicorn main:app --host 0.0.0.0 --port $PORT
